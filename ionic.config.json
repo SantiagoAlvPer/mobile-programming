@@ -1,0 +1,7 @@
+{
+  "name": "parcialProgramingMovile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

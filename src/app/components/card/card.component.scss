@@ -1,0 +1,47 @@
+ion-card {
+
+  width: 180px;
+  height: flex;
+  padding: .8em;
+  background: #ffffff;
+  position: relative;
+  overflow: visible;
+
+
+
+}
+
+ion-card-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #000000;
+}
+.text-price {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.9em;
+  line-height: 1.3em;
+  color: #36de38;
+  margin: 10px;
+ }
+
+ion-img {
+
+  height: 110px;
+  object-fit: contain;
+
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  background: linear-gradient(to right, #000, #999, #000);
+  margin: 10px 0;
+}
+//botton
+
+ion-button {
+  display: block;
+  margin: 0 auto;
+}

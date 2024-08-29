@@ -1,0 +1,48 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>virtual store</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="card-btn" (click)="viewCart()">
+        <ion-icon name="cart-outline" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button color="medium">
+          Select an category
+          <ion-icon name="chevron-down-outline" slot="end"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col size="6" size-md="3" *ngFor="let product of products">
+        <app-card (doClick)="doNavigate($event)" [id]="product.id" [image]="product.image" [price]="product.price" [category]="product.category">
+        </app-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+<!-- <ion-content [fullscreen]="true">
+  <div class="card">
+  <app-card *ngFor="let product of products"
+    [id] ="product.id" 
+    [title]="product.title"
+    [price]="product.price"       
+    [description]="product.description"
+    [category]="product.category"      
+    [rating]="product.rating"  
+    [image]="product.image"
+  >
+  </app-card></div>
+</ion-content> -->
